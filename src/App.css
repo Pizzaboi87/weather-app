@@ -4,7 +4,7 @@ body {
   background-size: cover;
   background-color: #2596be;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
 }
 
 .App {
@@ -119,6 +119,10 @@ button {
 @media (max-width: 920px){
   .searchdata--field1, .searchdata--field2, .searchdata--field3 {
     font-size: 1rem;
+  }
+
+  .error {
+    padding-bottom: 90vh;
   }
 }
 
