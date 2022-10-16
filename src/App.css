@@ -1,0 +1,181 @@
+body {
+  background: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2596be;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;;
+}
+
+.App {
+  text-align: center;
+}
+
+h1, h2, .error {
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
+  text-shadow: 3px 3px black;
+  letter-spacing: 0.2rem;
+}
+
+button, input {
+  background: linear-gradient(130deg, #e2e23a, #d3b954);
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid;
+}
+
+button {
+  cursor: pointer;
+}
+
+.searchdata {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #aeaee0, #8080ca, #6565c2);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto 30px;
+  box-shadow: dimgrey 3px 5px;
+}
+
+.searchdata--field1, .searchdata--field3 {
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.searchdata--field2 {
+  width: 20%;
+  font-size: 1rem;
+}
+
+.searchdata--icon {
+  width: 75%;
+  height: auto;
+}
+
+.searchdata--sky {
+  margin-top: -15px;
+  font-style: italic;
+}
+
+.resultbox {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.forecastbox {
+  min-width: 200px;
+  min-height: 240px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: linear-gradient(130deg, #e2e23a, #c0a020);
+  box-shadow: dimgrey 3px 5px;
+}
+
+.forecast--date {
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 2px;
+  margin: 0;
+  background-color: #8080ca;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.forecast--temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+
+.forecast--icon {
+  width: 50%;
+  height: auto;
+}
+
+.forecast--sky {
+  margin: 0;
+  font-style: italic;
+}
+
+.forecast--comment {
+  margin: 0;
+  padding-bottom: 30px;
+  font-style: italic; 
+}
+
+@media (max-width: 920px){
+  .searchdata--field1, .searchdata--field2, .searchdata--field3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 720px){
+  h1 {
+    margin-top: 60px;
+  }
+  
+  .searchdata {
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .searchdata--field1, .searchdata--field2, .searchdata--field3 {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .searchdata--icon, .forecast--icon {
+    width: 50%;
+  }
+
+  .forecastbox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px){
+  .searchdata--field1, .searchdata--field3 {
+    font-size: 1.2rem;
+  }
+
+  .searchdata--field2 {
+    font-size: 1rem;
+  }
+
+  button {
+    margin-top: 15px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 300px){
+  input {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .searchdata--field1, .searchdata--field2, .searchdata--field3 {
+    font-size: 0.8rem;
+  }
+}
