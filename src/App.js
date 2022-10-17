@@ -43,8 +43,6 @@ function App() {
     )
   })
 
-  console.log(forecastResult)
-
   return (
     <div className="App">
       <h1>My Weather App</h1>
